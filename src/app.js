@@ -7,8 +7,12 @@ function getWeatherTempterature(response) {
   let windElement = document.querySelector("#wind");
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
-
-  console.log(response.data.time);
+  let temperatureIcon = document.querySelector("#temperature-icon");
+  temperatureIcon.innerHTML = `<img
+                  src="${response.data.condition.icon_url}"
+                  alt="temperature icon"
+                  class="temperature-icon"
+                />`;
 
   cityElement.innerHTML = response.data.city;
   timeElement.innerHTML = formattedDate(date);
@@ -37,6 +41,9 @@ function formattedDate(date) {
     minutes = `0${minutes}`;
   }
 
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
   return `${day} ${hours}:${minutes}`;
 }
 
