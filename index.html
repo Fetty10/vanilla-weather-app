@@ -30,15 +30,18 @@
       <main>
         <div class="weather-container">
           <div>
-            <h1 class="city" id="city">Lagos</h1>
+            <h1 class="city" id="city"></h1>
             <p class="description">
-              Friday 0:06, overcast clouds <br />
-              Humidity: <strong>95%</strong>, Wind: <strong>2.57km/h</strong>
+              <span id="time"></span>,
+              <span id="weather-condition">overcast clouds</span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind"></strong>
             </p>
           </div>
           <div class="temperature">
             <div class="temperature-icon">🌤️</div>
-            <div class="temperature-value" id="temperature-value">12</div>
+            <div class="temperature-value" id="temperature-value"></div>
             <div class="temperature-unit">°C</div>
           </div>
         </div>
