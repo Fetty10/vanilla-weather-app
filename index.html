@@ -15,12 +15,13 @@
   <body>
     <div class="container">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="text"
             placeholder="Enter a city.."
             required
             class="search-input"
+            id="search-input"
           />
           <input type="submit" value="Search" class="search-button" />
         </form>
@@ -28,7 +29,7 @@
       <main>
         <div class="weather-container">
           <div>
-            <h1 class="city">Lagos</h1>
+            <h1 class="city" id="city">Lagos</h1>
             <p class="description">
               Friday 0:06, overcast clouds <br />
               Humidity: <strong>95%</strong>, Wind: <strong>2.57km/h</strong>
@@ -49,5 +50,6 @@
         <a href="https://fetty-vanilla-weather-app.netlify.app/">Netlify</a>
       </footer>
     </div>
+    <script src="src/app.js"></script>
   </body>
 </html>
