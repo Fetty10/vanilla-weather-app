@@ -15,18 +15,31 @@
   <body>
     <div class="container">
       <header>
-        <input type="text" placeholder="Enter a city.." required />
-        <input type="submit" value="search" />
+        <form class="search-form">
+          <input
+            type="text"
+            placeholder="Enter a city.."
+            required
+            class="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
       </header>
       <main>
-        <div>
-          <h1>Lagos</h1>
-          <p>
-            Friday 0:06, overcast clouds <br />
-            Humidity: 95%, Wind: 2.57km/h
-          </p>
+        <div class="weather-container">
+          <div>
+            <h1 class="city">Lagos</h1>
+            <p class="description">
+              Friday 0:06, overcast clouds <br />
+              Humidity: <strong>95%</strong>, Wind: <strong>2.57km/h</strong>
+            </p>
+          </div>
+          <div class="temperature">
+            <div class="temperature-icon">🌤️</div>
+            <div class="temperature-value">12</div>
+            <div class="temperature-unit">°C</div>
+          </div>
         </div>
-        <div>🌤️11°C</div>
       </main>
       <footer>
         This project was coded by

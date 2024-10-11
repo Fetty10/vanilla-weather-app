@@ -3,6 +3,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  color: rgb(94, 157, 229);
+  text-decoration: none;
+}
+
 .container {
   background-color: #fff;
   max-width: 600px;
@@ -10,4 +15,73 @@ body {
   padding: 30px;
   border-radius: 16px;
   box-shadow: rgba(65, 50, 100, 0.08) 0px 30px 50px 0px;
+}
+
+header {
+  border-bottom: 1px solid #f9f7fd;
+  padding: 0 0 30px 0;
+}
+
+.search-input {
+  background-color: #f9f7fd;
+  border: none;
+  border-radius: 6px;
+  padding: 15px 20px;
+  width: 75%;
+  font-size: 16px;
+}
+.search-button {
+  background: rgb(94, 157, 229);
+  border: none;
+  padding: 15px 25px;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #fff;
+  margin-left: 5px;
+}
+main {
+  padding: 30px 0;
+}
+
+.weather-container {
+  display: flex;
+  justify-content: space-between;
+}
+.city {
+  margin: 0;
+  font-size: 38px;
+  line-height: 48px;
+}
+.description {
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.description strong {
+  color: #f65281;
+  font-weight: 500;
+}
+.temperature {
+  display: flex;
+}
+
+.temperature-icon {
+  font-size: 44px;
+  margin-top: 22px;
+}
+.temperature-value {
+  font-size: 88px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.temperature-unit {
+  margin-top: 16px;
+  font-size: 28px;
+}
+footer {
+  border-top: 1px solid #f9f7fd;
+  padding: 0 0 30px 0;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
 }
