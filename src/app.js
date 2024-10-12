@@ -60,7 +60,30 @@ function handleSearch(event) {
   searchCity(searchInput.value);
 }
 
+function showForecast() {
+  let days = ["Tue", "Wed", "Thur", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="weather-forecast-items">
+            <div class="weather-forecast-day">${day}</div>
+            <div class="weather-forecast-icon">🌧️</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-degree">
+                <b>19°</b>
+              </div>
+              <div class="weather-forecast-degree">15°</div>
+            </div>
+          </div>`;
+  });
+
+  let weatherForecast = document.querySelector("#weather-forecast");
+  weatherForecast.innerHTML = forecastHtml;
+}
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSearch);
 
 searchCity("Lagos");
+showForecast();
